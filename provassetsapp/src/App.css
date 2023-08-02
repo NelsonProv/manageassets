@@ -1,38 +1,90 @@
-.App {
+body {
+  background: rgba(0, 0, 0, .1) url('../public/Providence-background.png') no-repeat center center fixed; 
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: arial;
+}
+
+div.loginHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+div.loginHeader h1{
+  font-size: 100px;
+  color: #d32e12;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+div.loginHeader p{
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0px;
+}
+
+div.loginHeader p:after{
+  content: '';
+  display: block;
+  height: 5px;
+  background: #d32e12;
+  
+  margin: 0 auto;
+}
+
+div.loginBody form{
+  margin: 0 auto;
+  width: 450px;
+  background: rgba(0, 0, 0, .5);
+  padding: 50px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+div.loginInputsContainer{
+  margin-top: 20px;
+}
+
+div.loginInputsContainer label{
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+div.loginInputsContainer input{
+  height: 40px;
+  width: 100%;
+  border: 1.5px solid #d32e12;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  padding: 3px;
+  text-align: center;
+  font-style: italic;
+}
+
+div.loginButtonContainer{
+  margin-top: 35px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.loginButtonContainer button{
+ font-size: 20px;
+ padding: 10px 60px;
+ background: #d32e12;
+ border: none;
+ color: #fff;
+ border-radius: 4px;
+ cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.loginButtonContainer button:hover{
+  
+  background-color: #a31e07;
+  border: none;
+ 
 }
